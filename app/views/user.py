@@ -68,10 +68,4 @@ class DestroyUser(generics.DestroyAPIView):
         return Response({"success": False, "message": "user does not exist"})
 
     
-    # serializer = self.serializer_class(request.user, data=request.data, partial=True)
-    # if serializer.is_valid():
-    #   serializer.save()
-    #   return Response({"success": True, "message": "updated"})
-    # else:
-    #   print(serializer.errors)
-    #   return Response({"success": False, "message": "error updating"})
+   
